@@ -2,7 +2,7 @@
 
 ## Process
 1. Sketched some components with Pen & Paper to structure my thoughts.
-2. Produced a very high level wireframe in Sketch.
+2. Produced a [high level wireframe](https://user-images.githubusercontent.com/51401041/58946824-b5e1fd80-8754-11e9-9ecf-d86fc53853c2.jpg) in Sketch.
 
 ## Assumptions
 1. This would live under https://www.netlify.com/products/analytics
