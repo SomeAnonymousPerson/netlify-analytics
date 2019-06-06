@@ -1,10 +1,12 @@
 import React from 'react';
+import './MainFeatures.css';
 
 import Heading from '../../components/Heading';
 import Paragraph from '../../components/Paragraph';
 import Image from '../../components/Image';
 import List from '../../components/List';
 import ListItem from '../../components/ListItem';
+import Container from '../../components/Container';
 
 const MainFeatures = props => {
   const { content } = props;
@@ -17,8 +19,8 @@ const MainFeatures = props => {
   const MainFeaturesListItem = content.map((mainFeature, index) => {
     const { heading, paragraph, image } = mainFeature;
     return (
-      <ListItem key={index}>
-        <div>
+      <ListItem key={index} className="MainFeaturesListItem">
+        <div className="MainFeaturesListItem--content">
           <Heading element={heading.options.element}>{heading.text}</Heading>
           <Paragraph>{paragraph.text}</Paragraph>
         </div>
@@ -28,9 +30,9 @@ const MainFeatures = props => {
   });
 
   return (
-    <section>
+    <Container size="Narrow">
       <MainFeaturesList />
-    </section>
+    </Container>
   );
 };
 

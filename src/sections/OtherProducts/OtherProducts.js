@@ -2,33 +2,49 @@ import React from 'react';
 
 import Heading from '../../components/Heading';
 import Paragraph from '../../components/Paragraph';
-import Image from '../../components/Image';
 import List from '../../components/List';
 import ListItem from '../../components/ListItem';
+import Container from '../../components/Container';
+import './OtherProducts.css';
 
 const OtherProducts = props => {
-  const { heading, products } = props.content;
+  const { heading, products, subheading } = props.content;
 
-  const ProductList = () => {
-    return <List>{ProductListItem}</List>;
+  const OtherProductsList = () => {
+    return <List className="OtherProductsList">{OtherProductsListItem}</List>;
   };
 
-  const ProductListItem = products.map((product, index) => {
-    const { heading, paragraph, image } = product;
+  const OtherProductsListItem = products.map((product, index) => {
+    const { heading, paragraph } = product;
     return (
-      <ListItem key={index}>
-        <Image src={image.src} alt={image.alt} />
-        <Heading element={heading.options.element}>{heading.text}</Heading>
+      <ListItem key={index} className="OtherProductsListItem">
+        <Heading
+          element={heading.options.element}
+          className="OtherProductsListItem--Heading"
+        >
+          {heading.text}
+        </Heading>
         <Paragraph>{paragraph.text}</Paragraph>
       </ListItem>
     );
   });
 
   return (
-    <section>
-      <Heading element={heading.options.element}>{heading.text}</Heading>
-      <ProductList />
-    </section>
+    <Container>
+      <Heading
+        element={heading.options.element}
+        className="OtherProducts--SectionHeading"
+      >
+        {heading.text}
+      </Heading>
+      <Paragraph
+        element={subheading.options.element}
+        className="OtherProducts--SectionSubHeading"
+      >
+        {subheading.text}
+      </Paragraph>
+      <OtherProductsList />
+    </Container>
   );
 };
 

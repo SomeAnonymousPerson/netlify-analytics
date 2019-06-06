@@ -1,10 +1,15 @@
 import React from 'react';
+import './Heading.css';
 
 const Heading = props => {
-  const { element, children } = props;
+  const { element, children, className } = props;
   const HtmlTag = element || '<h2>';
 
-  return <HtmlTag>{children}</HtmlTag>;
+  let classNames = ['Heading'];
+
+  if (className) classNames.push(className);
+
+  return <HtmlTag className={classNames.join(' ')}>{children}</HtmlTag>;
 };
 
 export default Heading;

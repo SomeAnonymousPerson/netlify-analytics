@@ -1,0 +1,13 @@
+.Hero {
+  background-image: radial-gradient(52% 100%, #CF0046 13%, #6A0948 100%);
+  padding: 2rem 0;
+}
+
+.Hero .Heading {
+  color: #fff;
+}
+
+.Hero .Paragraph {
+  max-width: 26em;
+  color: #fff;
+}

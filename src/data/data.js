@@ -199,22 +199,29 @@ const data = {
       Component: 'OtherProducts',
       content: {
         heading: {
-          text: 'Explore other amazing Netlify features',
+          text: 'Do more with the Netlify Platform',
           options: {
             element: 'h2'
+          }
+        },
+        subheading: {
+          text:
+            'Start with Netlify Dev. Run our entire platform right on your laptop.',
+          options: {
+            element: 'p'
           }
         },
         products: [
           {
             heading: {
-              text: 'Netlify amazing features',
+              text: 'Netlify Dev',
               options: {
                 element: 'h3'
               }
             },
             paragraph: {
               text:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
+                'Run our entire platform right on your laptop. Preview it all — site generation, functions, and edge logic.',
               options: {
                 element: 'p'
               }
@@ -226,14 +233,14 @@ const data = {
           },
           {
             heading: {
-              text: 'Netlify amazing features',
+              text: 'Netlify Build',
               options: {
                 element: 'h3'
               }
             },
             paragraph: {
               text:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
+                'The Git workflow for web development. Build, deploy, and manage modern web projects.',
               options: {
                 element: 'p'
               }
@@ -245,14 +252,14 @@ const data = {
           },
           {
             heading: {
-              text: 'Netlify amazing features',
+              text: 'Netlify Edge',
               options: {
                 element: 'h3'
               }
             },
             paragraph: {
               text:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
+                'A new type of application delivery network custom designed for fast, responsive sites and modern workflows.',
               options: {
                 element: 'p'
               }

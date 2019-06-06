@@ -1,9 +1,12 @@
 import React from 'react';
 
 const List = props => {
-  const { children } = props;
+  const { className, children } = props;
+  let classNames = ['ListItem'];
 
-  return <li>{children}</li>;
+  if (className) classNames.push(className);
+
+  return <li className={classNames.join(' ')}>{children}</li>;
 };
 
 export default List;

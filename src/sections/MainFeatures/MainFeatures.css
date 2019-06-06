@@ -1,0 +1,7 @@
+.MainFeaturesListItem {
+  display: flex;
+}
+
+.MainFeaturesListItem--content {
+  padding: 0 2rem;
+}

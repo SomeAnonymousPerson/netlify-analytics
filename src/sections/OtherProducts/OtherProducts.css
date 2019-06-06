@@ -1,0 +1,40 @@
+.OtherProducts {
+  background-image: linear-gradient(257deg, #CF0046 0%, #6A0948 64%);
+  padding: 6rem 0 8rem 0;
+}
+
+.OtherProducts--SectionHeading {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.OtherProducts--SectionSubHeading {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  color: #fff;
+}
+
+.OtherProductsList {
+  display: flex;
+  margin-top: 3.5rem;
+}
+
+.OtherProductsListItem {
+  box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
+  padding-top: 4.236em;
+  background: #fff;
+  flex: 1 0 33%;
+  padding: 1.618em;
+  border-radius: 8px;
+}
+
+/* Until `gap` becomes a thing in every browser */
+.OtherProductsListItem + .OtherProductsListItem {
+  margin-left: 15px;
+}
+
+.OtherProductsListItem--Heading {
+  font-size: 1.3rem;
+}
