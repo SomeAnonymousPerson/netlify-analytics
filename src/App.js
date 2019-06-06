@@ -2,7 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import data from './data/data.js';
+
+import SectionRenderer from './renderer/SectionRenderer';
+
 function App() {
+  const sections = data.sections.map((section, index) => {
+    const { Component, content } = section;
+    return (
+      <SectionRenderer key={index} component={Component} content={content} />
+    );
+  });
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +30,7 @@ function App() {
           Learn React
         </a>
       </header>
+      {sections}
     </div>
   );
 }
