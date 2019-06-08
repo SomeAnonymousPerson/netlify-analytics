@@ -1,7 +1,25 @@
+.MainFeatures--SectionHeading {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4.5rem;
+}
+
 .MainFeaturesListItem {
   display: flex;
 }
 
+.MainFeaturesListItem + .MainFeaturesListItem {
+  margin-top: 2rem;
+}
+
+.MainFeaturesListItem:nth-child(even) .Image {
+  order: -1;
+}
+
 .MainFeaturesListItem--content {
   padding: 0 2rem;
+}
+
+.MainFeaturesListItem .Image {
+  max-width: 250px
 }

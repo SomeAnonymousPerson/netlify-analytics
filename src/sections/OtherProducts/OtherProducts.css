@@ -21,14 +21,34 @@
   margin-top: 3.5rem;
 }
 
+/* Some styles taken from netlify.com */
 .OtherProductsListItem {
   box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
   padding-top: 4.236em;
   background: #fff;
   flex: 1 0 33%;
-  padding: 1.618em;
+  padding: 3rem 2rem 2rem 2rem;
   border-radius: 8px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 102%;
 }
+
+.OtherProductsListItem--netlify-edge {
+  background-image: url(https://cdn.netlify.com/de5a24d0e183506778390f48ebefe5620077eac1/b778d/img/v2/edge/small-wave.svg);
+}
+
+.OtherProductsListItem--netlify-dev {
+  background-image: url(https://cdn.netlify.com/26640565c79c0ce76414e241489a49d475ff2ff8/8e364/img/v2/dev/small-wave.svg);
+  background-color:#0e1e25;
+  color: #fff;
+}
+
+.OtherProductsListItem--netlify-build {
+  background-image: url(https://cdn.netlify.com/fed657af34bdb9cc79732b223a9a159203c2f122/7a755/img/v2/build/small-wave.svg);
+}
+
+
 
 /* Until `gap` becomes a thing in every browser */
 .OtherProductsListItem + .OtherProductsListItem {

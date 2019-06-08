@@ -3,3 +3,14 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
 }
+
+.SmallerFeatures--SectionHeading {
+  text-align: center;
+  margin: 0 0 4rem 0;
+}
+
+.SmallerFeatures--Icon {
+  width: 35px;
+  height: 35px;
+  color: #CF0046;
+}

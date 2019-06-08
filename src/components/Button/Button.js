@@ -1,10 +1,19 @@
 import React from 'react';
+import './Button.css';
 
 const Button = props => {
-  const { element, children, href } = props;
+  const { element, children, href, className } = props;
   const HtmlTag = element || 'a';
 
-  return <HtmlTag href={href}>{children}</HtmlTag>;
+  let classNames = ['Button'];
+
+  if (className) classNames.push(className);
+
+  return (
+    <HtmlTag href={href} className={classNames.join(' ')}>
+      {children}
+    </HtmlTag>
+  );
 };
 
 export default Button;

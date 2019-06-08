@@ -1,0 +1,33 @@
+/* Prototyping only */
+
+.Header {
+  position: absolute;
+  top: 0;
+  mix-blend-mode: lighten;
+  z-index: 22;
+  width: 100%;
+}
+
+.Header--Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header--Container::after {
+  background-image: linear-gradient(-90deg,rgba(255,255,255,0) 0,#fff 5%,#fff 90%,rgba(255,255,255,0) 100%);
+  content: "";
+  display: block;
+  height: 2px;
+  opacity: .08;
+  position: absolute;
+  width: 100%;
+  bottom: -2px;
+}
+
+.Header--MenuDesktop {
+  width: 525px;
+}
+
+.Header--Signup {
+  width: 327px;
+}

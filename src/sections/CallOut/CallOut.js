@@ -1,34 +1,31 @@
 import React from 'react';
-import './Banner.css';
+import './CallOut.css';
 
-import MockUp from './mockup-on-mobile.png';
 import Heading from '../../components/Heading';
 import Paragraph from '../../components/Paragraph';
 import Container from '../../components/Container';
 import Image from '../../components/Image';
 import Button from '../../components/Button';
 
-const Banner = props => {
-  const { heading, paragraph, cta, image } = props.content;
+const CallOut = props => {
+  const { heading, paragraph, image, cta } = props.content;
   return (
     <Container>
-      <div className="Banner--content">
+      <div>
         <Heading
           element={heading.options.element}
-          className="Banner--SectionHeading"
+          className="CallOut--SectionHeading"
         >
           {heading.text}
         </Heading>
-        <Paragraph className="Banner--SectionSubHeading">
+        <Paragraph className="CallOut--SectionSubHeading">
           {paragraph.text}
         </Paragraph>
         {cta.url && <Button href={cta.url}>{cta.label}</Button>}
       </div>
-      <div className="Banner--image">
-        <Image src={MockUp} alt={image.alt} />
-      </div>
+      {image.src && <Image src={image.src} alt={image.alt} />}
     </Container>
   );
 };
 
-export default Banner;
+export default CallOut;

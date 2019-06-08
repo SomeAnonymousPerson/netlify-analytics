@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NetlifyAnalytics from './pages/NetlifyAnalytics';
+import Layout from './layout/Layout';
 
-ReactDOM.render(<NetlifyAnalytics />, document.getElementById('root'));
+ReactDOM.render(<Layout />, document.getElementById('root'));

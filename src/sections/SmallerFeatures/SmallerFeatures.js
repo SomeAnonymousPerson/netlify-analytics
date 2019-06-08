@@ -3,10 +3,10 @@ import './SmallerFeatures.css';
 
 import Heading from '../../components/Heading';
 import Paragraph from '../../components/Paragraph';
-import Image from '../../components/Image';
 import List from '../../components/List';
 import ListItem from '../../components/ListItem';
 import Container from '../../components/Container';
+import Icon from '../../components/Icon';
 
 const SmallerFeatures = props => {
   const { content } = props;
@@ -18,19 +18,27 @@ const SmallerFeatures = props => {
   };
 
   // SmallerFeatures content model accepts an array
-  const SmallerFeaturesListItem = content.map((smallerFeature, index) => {
-    const { heading, paragraph, image } = smallerFeature;
-    return (
-      <ListItem key={index} className="SmallerFeaturesListItem">
-        <Image src={image.src} alt={image.alt} />
-        <Heading element={heading.options.element}>{heading.text}</Heading>
-        <Paragraph>{paragraph.text}</Paragraph>
-      </ListItem>
-    );
-  });
+  const SmallerFeaturesListItem = content.features.map(
+    (smallerFeature, index) => {
+      const { heading, paragraph, icon } = smallerFeature;
+      return (
+        <ListItem key={index} className="SmallerFeaturesListItem">
+          <Icon icon={icon} className="SmallerFeatures--Icon" />
+          <Heading element={heading.options.element}>{heading.text}</Heading>
+          <Paragraph>{paragraph.text}</Paragraph>
+        </ListItem>
+      );
+    }
+  );
 
   return (
     <Container>
+      <Heading
+        element={content.heading.options.element}
+        className="SmallerFeatures--SectionHeading"
+      >
+        {content.heading.text}
+      </Heading>
       <SmallerFeaturesList />
     </Container>
   );

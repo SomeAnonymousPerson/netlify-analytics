@@ -6,12 +6,13 @@ const sizes = {
 };
 
 const Container = props => {
-  const { element, children, size } = props;
+  const { element, children, size, className } = props;
   const HtmlTag = element || 'div';
 
   var classNames = ['Container'];
 
   if (size) classNames.push(sizes[size]);
+  if (className) classNames.push(className);
 
   return <HtmlTag className={classNames.join(' ')}>{children}</HtmlTag>;
 };

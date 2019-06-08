@@ -15,8 +15,8 @@ const MainFeatures = props => {
     return <List>{MainFeaturesListItem}</List>;
   };
 
-  // MainFeatures content model accepts an array
-  const MainFeaturesListItem = content.map((mainFeature, index) => {
+  // MainFeatures content model accepts an array of features
+  const MainFeaturesListItem = content.features.map((mainFeature, index) => {
     const { heading, paragraph, image } = mainFeature;
     return (
       <ListItem key={index} className="MainFeaturesListItem">
@@ -31,6 +31,12 @@ const MainFeatures = props => {
 
   return (
     <Container size="Narrow">
+      <Heading
+        element={content.heading.options.element}
+        className="MainFeatures--SectionHeading"
+      >
+        {content.heading.text}
+      </Heading>
       <MainFeaturesList />
     </Container>
   );

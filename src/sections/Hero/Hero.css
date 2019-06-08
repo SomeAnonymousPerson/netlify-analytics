@@ -1,6 +1,9 @@
 .Hero {
-  background-image: radial-gradient(52% 100%, #CF0046 13%, #6A0948 100%);
-  padding: 2rem 0;
+  background: #fff url('./wave.svg') bottom center no-repeat;
+  background-size: cover;
+  padding: 7rem 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .Hero .Heading {
@@ -8,6 +11,13 @@
 }
 
 .Hero .Paragraph {
+  font-size: 1.3rem;
   max-width: 26em;
   color: #fff;
+}
+
+.Hero .Image {
+  position: absolute;
+  top: 130px;
+  left: 45%;
 }

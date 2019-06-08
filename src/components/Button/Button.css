@@ -1,0 +1,19 @@
+/* Simplified version of the .button class on netlify.com */
+
+.Button {
+  background: #00ad9f;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
+  color: #fff;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.618;
+  padding: .382em 1em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+}
+
+.Button:hover {
+  background-color: #00c2b2;
+}

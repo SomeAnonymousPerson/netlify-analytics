@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="197px" height="116px" viewBox="0 0 197 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Balance</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="44.8147084%" x2="100%" y2="55.1852916%" id="linearGradient-1">
+            <stop stop-color="#51C81C" offset="0%"></stop>
+            <stop stop-color="#48AF1B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Balance" transform="translate(-1.000000, -5.000000)">
+            <g id="tag" transform="translate(29.000000, 83.000000)">
+                <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="118" height="38" rx="19"></rect>
+                <text id="+-23,91%" font-family="Arial-BoldMT, Arial" font-size="20" font-weight="bold" line-spacing="20" fill="#FFFFFF">
+                    <tspan x="20" y="27">+ 23,91%</tspan>
+                </text>
+            </g>
+            <text id="$183,927" font-family="Arial-BoldMT, Arial" font-size="48" font-weight="bold" fill="#A10447">
+                <tspan x="0" y="43">$183,927</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

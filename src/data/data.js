@@ -24,175 +24,157 @@ const data = {
     },
     {
       Component: 'MainFeatures',
-      content: [
-        {
-          heading: {
-            text: 'Main feature #1',
-            options: {
-              element: 'h2'
-            }
-          },
-          paragraph: {
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
-            options: {
-              element: 'p'
-            }
-          },
-          image: {
-            src: 'https://via.placeholder.com/150',
-            alt: 'aaaa'
+      content: {
+        heading: {
+          text: 'Everything you need to take better decision',
+          options: {
+            element: 'h2'
           }
         },
-        {
-          heading: {
-            text: 'Main feature #2',
-            options: {
-              element: 'h2'
+        features: [
+          {
+            heading: {
+              text: 'Real-time Audience tracking',
+              options: {
+                element: 'h3'
+              }
+            },
+            paragraph: {
+              text: 'See audience in real-time visiting your website.',
+              options: {
+                element: 'p'
+              }
+            },
+            image: {
+              src: 'https://via.placeholder.com/150',
+              alt: 'aaaa'
             }
           },
-          paragraph: {
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
-            options: {
-              element: 'p'
+          {
+            heading: {
+              text: 'Beautiful charts',
+              options: {
+                element: 'h3'
+              }
+            },
+            paragraph: {
+              text:
+                'Tons of beautiful charts to help you track the data you need.',
+              options: {
+                element: 'p'
+              }
+            },
+            image: {
+              src: 'https://via.placeholder.com/150',
+              alt: 'aaaa'
             }
           },
-          image: {
-            src: 'https://via.placeholder.com/150',
-            alt: 'aaaa'
+          {
+            heading: {
+              text: 'Measure KPIs',
+              options: {
+                element: 'h3'
+              }
+            },
+            paragraph: {
+              text:
+                'Automatically uncover key characteristics of the segments that are driving your company’s KPIs.',
+              options: {
+                element: 'p'
+              }
+            },
+            image: {
+              src: 'https://via.placeholder.com/150',
+              alt: 'aaaa'
+            }
           }
-        },
-        {
-          heading: {
-            text: 'Main feature #3',
-            options: {
-              element: 'h2'
-            }
-          },
-          paragraph: {
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
-            options: {
-              element: 'p'
-            }
-          },
-          image: {
-            src: 'https://via.placeholder.com/150',
-            alt: 'aaaa'
-          }
-        }
-      ]
+        ]
+      }
     },
     {
       Component: 'Banner',
       content: {
         heading: {
-          text: 'Important call-to-action',
+          text: 'All the data at your fingertips',
           options: {
             element: 'h2'
           }
         },
         paragraph: {
           text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
+            'Access all your data quickly on your mobile device or your 6000$ Mac Pro.',
           options: {
             element: 'p'
           }
         },
         cta: {
-          label: 'Call to action',
-          url: 'https://www.google.com'
+          label: 'Try it now',
+          url: 'https://www.netlify.com/'
         },
         image: {
-          src: 'https://via.placeholder.com/150',
-          alt: 'aaaa'
+          src: 'mockup-on-mobile.png',
+          alt:
+            'Analytics dashboard displaying a vertical bar chart of the monthly visitors.'
         }
       }
     },
     {
       Component: 'SmallerFeatures',
-      content: [
-        {
-          heading: {
-            text: 'Smaller feature #1',
-            options: {
-              element: 'h3'
-            }
-          },
-          paragraph: {
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
-            options: {
-              element: 'p'
-            }
-          },
-          image: {
-            src: 'https://via.placeholder.com/150',
-            alt: 'aaaa'
-          }
-        },
-        {
-          heading: {
-            text: 'Smaller feature #2',
-            options: {
-              element: 'h3'
-            }
-          },
-          paragraph: {
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
-            options: {
-              element: 'p'
-            }
-          },
-          image: {
-            src: 'https://via.placeholder.com/150',
-            alt: 'aaaa'
-          }
-        },
-        {
-          heading: {
-            text: 'Smaller feature #3',
-            options: {
-              element: 'h3'
-            }
-          },
-          paragraph: {
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
-            options: {
-              element: 'p'
-            }
-          },
-          image: {
-            src: 'https://via.placeholder.com/150',
-            alt: 'aaaa'
-          }
-        }
-      ]
-    },
-    {
-      Component: 'Banner',
       content: {
         heading: {
-          text: 'Ready to try out Netlify Analytics?',
+          text: 'All the data at your fingertips',
           options: {
             element: 'h2'
           }
         },
-        paragraph: {
-          text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
-          options: {
-            element: 'p'
+        features: [
+          {
+            heading: {
+              text: 'Audience technology',
+              options: {
+                element: 'h3'
+              }
+            },
+            paragraph: {
+              text:
+                'Get audience technology data such as browser and network usage',
+              options: {
+                element: 'p'
+              }
+            },
+            icon: 'PieChart'
+          },
+          {
+            heading: {
+              text: 'Campaigns traffic',
+              options: {
+                element: 'h3'
+              }
+            },
+            paragraph: {
+              text: 'Run Google Ads campaign directly from our admin dashboard',
+              options: {
+                element: 'p'
+              }
+            },
+            icon: 'BarChart'
+          },
+          {
+            heading: {
+              text: 'Developer API',
+              options: {
+                element: 'h3'
+              }
+            },
+            paragraph: {
+              text: 'Create custom report with our analytics API.',
+              options: {
+                element: 'p'
+              }
+            },
+            icon: 'Code'
           }
-        },
-        cta: {
-          label: 'Call to action',
-          url: 'https://www.google.com'
-        },
-        image: 'null'
+        ]
       }
     },
     {
@@ -226,10 +208,7 @@ const data = {
                 element: 'p'
               }
             },
-            image: {
-              src: 'https://via.placeholder.com/150',
-              alt: 'aaaa'
-            }
+            productHandle: 'netlify-dev'
           },
           {
             heading: {
@@ -245,10 +224,7 @@ const data = {
                 element: 'p'
               }
             },
-            image: {
-              src: 'https://via.placeholder.com/150',
-              alt: 'aaaa'
-            }
+            productHandle: 'netlify-build'
           },
           {
             heading: {
@@ -264,12 +240,31 @@ const data = {
                 element: 'p'
               }
             },
-            image: {
-              src: 'https://via.placeholder.com/150',
-              alt: 'aaaa'
-            }
+            productHandle: 'netlify-edge'
           }
         ]
+      }
+    },
+    {
+      Component: 'CallOut',
+      content: {
+        heading: {
+          text: 'Ready to try out Netlify Analytics?',
+          options: {
+            element: 'h2'
+          }
+        },
+        paragraph: {
+          text: 'All the important stuff. Right here on Netlify',
+          options: {
+            element: 'p'
+          }
+        },
+        cta: {
+          label: 'Get started for free',
+          url: 'https://www.google.com'
+        },
+        image: 'null'
       }
     }
   ]

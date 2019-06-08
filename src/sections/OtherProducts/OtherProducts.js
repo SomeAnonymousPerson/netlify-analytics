@@ -15,9 +15,12 @@ const OtherProducts = props => {
   };
 
   const OtherProductsListItem = products.map((product, index) => {
-    const { heading, paragraph } = product;
+    const { heading, paragraph, productHandle } = product;
+
+    const className = `OtherProductsListItem OtherProductsListItem--${productHandle}`;
+
     return (
-      <ListItem key={index} className="OtherProductsListItem">
+      <ListItem key={index} className={className}>
         <Heading
           element={heading.options.element}
           className="OtherProductsListItem--Heading"
