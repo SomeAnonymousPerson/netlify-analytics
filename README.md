@@ -2,12 +2,14 @@
 
 # netlify-analytics
 
-## Process
-1. Sketched some components with Pen & Paper to structure my thoughts.
-2. Produced a [high level wireframe](https://user-images.githubusercontent.com/51401041/58946824-b5e1fd80-8754-11e9-9ecf-d86fc53853c2.jpg) in Sketch.
+## Visuals
+1. Produced a [high level wireframe](https://user-images.githubusercontent.com/51401041/58946824-b5e1fd80-8754-11e9-9ecf-d86fc53853c2.jpg) in Sketch first to structure my thoughts. 
+2. Most of the UI (icons, charts, etc) comes from different UI kit from https://www.sketchappsources.com
 
 ## Assumptions
 1. This would live under https://www.netlify.com/products/analytics
+2. Only tested on the latest browsers (Chrome, Firefox, Safari)
+3. Mocked data around a content model that would come from a CMS. [See data.json](https://github.com/SomeAnonymousPerson/netlify-analytics/blob/master/src/data/data.js)
 
 ## Questions I asked
 **Q. Since this fictional project would live on the would on netlify.com, should I reuse the same visual cues (ex. buttons styling, images drop shadow, etc) as much as possible?**
