@@ -17,7 +17,9 @@
 }
 
 .OtherProductsList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
   margin-top: 3.5rem;
 }
 
@@ -26,7 +28,6 @@
   box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
   padding-top: 4.236em;
   background: #fff;
-  flex: 1 0 33%;
   padding: 3rem 2rem 2rem 2rem;
   border-radius: 8px;
   background-position: top center;
@@ -48,13 +49,21 @@
   background-image: url(https://cdn.netlify.com/fed657af34bdb9cc79732b223a9a159203c2f122/7a755/img/v2/build/small-wave.svg);
 }
 
-
-
-/* Until `gap` becomes a thing in every browser */
-.OtherProductsListItem + .OtherProductsListItem {
-  margin-left: 15px;
-}
-
 .OtherProductsListItem--Heading {
   font-size: 1.3rem;
+}
+
+@media (max-width: 50em) {
+  .OtherProductsList {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 30em) {
+  .OtherProductsList {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
 }

@@ -1,6 +1,7 @@
 .Banner {
   background-color: #4b0c35;
   padding: 0;
+  position: relative;
 }
 
 .Banner--image {
@@ -37,4 +38,25 @@
 .Banner--content {
   flex-basis: 50%;
   padding: 5rem 0;
+}
+
+@media (max-width: 50em) {
+  .Banner {
+    overflow: hidden;
+  }
+  .Banner--image {
+    position: absolute;
+    left: 50%;
+    width: 75%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 30em) {
+  .Banner--content {
+    flex-basis: 100%;
+  }
+  .Banner--image {
+    display: none;
+  }
 }

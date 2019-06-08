@@ -46,8 +46,8 @@ const data = {
               }
             },
             image: {
-              src: 'https://via.placeholder.com/150',
-              alt: 'aaaa'
+              src: 'map.svg',
+              alt: ''
             }
           },
           {
@@ -65,8 +65,8 @@ const data = {
               }
             },
             image: {
-              src: 'https://via.placeholder.com/150',
-              alt: 'aaaa'
+              src: 'chart.svg',
+              alt: ''
             }
           },
           {
@@ -84,8 +84,8 @@ const data = {
               }
             },
             image: {
-              src: 'https://via.placeholder.com/150',
-              alt: 'aaaa'
+              src: 'calendar.svg',
+              alt: ''
             }
           }
         ]

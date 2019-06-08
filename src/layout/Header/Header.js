@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import menuImage from './header-menu.png';
+import menuMobile from './header-mobile.png';
 import signupImage from './header-signup.png';
 
 import Container from '../../components/Container';
@@ -11,6 +12,7 @@ const Header = () => {
     <header className="Header">
       <Container className="Header--Container">
         <Image src={menuImage} className="Header--MenuDesktop" />
+        <Image src={menuMobile} className="Header--MenuMobile" />
         <Image src={signupImage} className="Header--Signup" />
       </Container>
     </header>

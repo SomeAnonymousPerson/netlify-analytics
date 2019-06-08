@@ -18,13 +18,16 @@ const MainFeatures = props => {
   // MainFeatures content model accepts an array of features
   const MainFeaturesListItem = content.features.map((mainFeature, index) => {
     const { heading, paragraph, image } = mainFeature;
+
+    const imageUrl = `uploads/${image.src}`;
+
     return (
       <ListItem key={index} className="MainFeaturesListItem">
         <div className="MainFeaturesListItem--content">
           <Heading element={heading.options.element}>{heading.text}</Heading>
           <Paragraph>{paragraph.text}</Paragraph>
         </div>
-        <Image src={image.src} alt={image.alt} />
+        <Image src={imageUrl} alt={image.alt} />
       </ListItem>
     );
   });

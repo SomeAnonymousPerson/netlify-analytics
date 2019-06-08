@@ -21,6 +21,7 @@
   opacity: .08;
   position: absolute;
   width: 100%;
+  max-width: 75rem;
   bottom: -2px;
 }
 
@@ -30,4 +31,21 @@
 
 .Header--Signup {
   width: 327px;
+}
+
+.Header--MenuMobile {
+  width: 157px;
+  display: none;
+}
+
+@media (max-width: 40em) {
+  .Header--MenuMobile {
+    display: block;
+  }
+  .Header--MenuDesktop {
+    display: none;
+  }
+  .Header--Signup {
+    display: none;
+  }
 }

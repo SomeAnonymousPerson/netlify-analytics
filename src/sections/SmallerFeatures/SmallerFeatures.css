@@ -14,3 +14,9 @@
   height: 35px;
   color: #CF0046;
 }
+
+@media (max-width: 40em) {
+  .SmallerFeaturesList {
+    grid-template-columns: 1fr;
+  }
+}

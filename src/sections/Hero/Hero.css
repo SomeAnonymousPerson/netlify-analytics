@@ -21,3 +21,14 @@
   top: 130px;
   left: 45%;
 }
+
+
+/* Mobile */
+@media (max-width: 40em) {
+  .Hero {
+    padding: 7rem 0 4rem;
+  }
+  .Hero .Image {
+    display: none;
+  }
+}

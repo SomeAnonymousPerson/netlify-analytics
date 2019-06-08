@@ -14,3 +14,10 @@ h2 {
 .inverted h2 {
   color: #fff;
 }
+
+@media (max-width: 40em) {
+  h1 {
+    padding-top: 0;
+  }
+}
+
