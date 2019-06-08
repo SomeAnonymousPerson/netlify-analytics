@@ -11,14 +11,10 @@ const data = {
         },
         paragraph: {
           text:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt nisl aliquam porta aliquet. In faucibus dolor enim, id vehicula ante tristique ac.',
+            'You just launched your website. Keep track of all the important data and know more about your customers.',
           options: {
             element: 'p'
           }
-        },
-        cta: {
-          label: 'Call to action',
-          url: 'https://www.google.com'
         }
       }
     },
@@ -122,7 +118,7 @@ const data = {
       Component: 'SmallerFeatures',
       content: {
         heading: {
-          text: 'All the data at your fingertips',
+          text: 'Everything else you need',
           options: {
             element: 'h2'
           }

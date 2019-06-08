@@ -7,7 +7,10 @@ const Image = props => {
 
   if (className) classNames.push(className);
 
-  return <img src={src} alt={alt} className={classNames.join(' ')} />;
+  // Using the native lazy loading solution here just for the demo
+  return (
+    <img src={src} alt={alt} className={classNames.join(' ')} loading="lazy" />
+  );
 };
 
 export default Image;

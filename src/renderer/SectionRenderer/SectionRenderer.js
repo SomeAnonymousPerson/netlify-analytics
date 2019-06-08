@@ -18,11 +18,11 @@ const SectionsList = {
 
 const SectionRenderer = props => {
   const { component, content } = props;
-  const ReactComponent = SectionsList[component];
+  const Section = SectionsList[component];
 
   return (
     <section className={component}>
-      <ReactComponent content={content} />
+      <Section content={content} />
     </section>
   );
 };

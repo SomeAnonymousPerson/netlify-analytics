@@ -19,7 +19,7 @@
 .OtherProductsList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 15px;
   margin-top: 3.5rem;
 }
 
@@ -55,15 +55,18 @@
 
 @media (max-width: 50em) {
   .OtherProductsList {
-    grid-template-columns: 0.8fr;
+    grid-template-columns: 1fr;
     justify-content: center;
-    grid-gap: 20px;
+  }
+
+  .OtherProductsListItem {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 30em) {
-  .OtherProductsList {
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+  .OtherProductsListItem {
+    max-width: 100%;
   }
 }
