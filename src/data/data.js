@@ -2,6 +2,7 @@ const data = {
   sections: [
     {
       Component: 'Hero',
+      style: 'inverse',
       content: {
         heading: {
           text: 'Netlify Analytics',
@@ -112,7 +113,8 @@ const data = {
           alt:
             'Analytics dashboard displaying a vertical bar chart of the monthly visitors.'
         }
-      }
+      },
+      style: 'inverse'
     },
     {
       Component: 'SmallerFeatures',
@@ -239,7 +241,8 @@ const data = {
             productHandle: 'netlify-edge'
           }
         ]
-      }
+      },
+      style: 'inverse'
     },
     {
       Component: 'CallOut',

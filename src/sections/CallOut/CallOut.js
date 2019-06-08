@@ -12,15 +12,8 @@ const CallOut = props => {
   return (
     <Container>
       <div>
-        <Heading
-          element={heading.options.element}
-          className="CallOut--SectionHeading"
-        >
-          {heading.text}
-        </Heading>
-        <Paragraph className="CallOut--SectionSubHeading">
-          {paragraph.text}
-        </Paragraph>
+        <Heading element={heading.options.element}>{heading.text}</Heading>
+        <Paragraph variant="SectionSubHeading">{paragraph.text}</Paragraph>
         {cta.url && <Button href={cta.url}>{cta.label}</Button>}
       </div>
       {image.src && <Image src={image.src} alt={image.alt} />}

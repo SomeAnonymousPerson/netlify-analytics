@@ -15,6 +15,7 @@ const Banner = props => {
       <div className="Banner--content">
         <Heading
           element={heading.options.element}
+          variant="SectionHeading"
           className="Banner--SectionHeading"
         >
           {heading.text}

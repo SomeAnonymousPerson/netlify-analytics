@@ -7,12 +7,3 @@
 .CallOut .Container {
   position: relative;
 }
-
-.CallOut--SectionHeading {
-  margin-bottom: 0;
-}
-
-.CallOut--SectionSubHeading {
-  font-size: 1.3rem;
-  margin-top: 0.5em;
-}

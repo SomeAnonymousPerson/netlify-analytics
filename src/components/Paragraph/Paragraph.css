@@ -6,3 +6,12 @@
 .Paragraph + .Button {
   margin-top: 2rem;
 }
+
+.SectionSubHeading {
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+}
+
+.inverse .Paragraph {
+  color: #fff;
+}

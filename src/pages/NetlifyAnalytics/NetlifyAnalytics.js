@@ -7,7 +7,7 @@ import SectionRenderer from '../../renderer/SectionRenderer';
 const NetlifyAnalytics = props => {
   const { data } = props;
   const sections = data.sections.map((section, index) => {
-    const { Component, content } = section;
+    const { Component, content, style } = section;
     return (
       <>
         <Helmet key="Helmet">
@@ -17,7 +17,12 @@ const NetlifyAnalytics = props => {
             content="Discover Netlify Analytics with Real-time Audience tracking, Beautiful charts and KPIs."
           />
         </Helmet>
-        <SectionRenderer key={index} component={Component} content={content} />
+        <SectionRenderer
+          key={index}
+          component={Component}
+          content={content}
+          style={style}
+        />
       </>
     );
   });

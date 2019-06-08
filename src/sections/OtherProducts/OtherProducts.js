@@ -34,14 +34,12 @@ const OtherProducts = props => {
 
   return (
     <Container>
-      <Heading
-        element={heading.options.element}
-        className="OtherProducts--SectionHeading"
-      >
+      <Heading element={heading.options.element} variant="SectionHeading">
         {heading.text}
       </Heading>
       <Paragraph
         element={subheading.options.element}
+        variant="SectionSubHeading"
         className="OtherProducts--SectionSubHeading"
       >
         {subheading.text}

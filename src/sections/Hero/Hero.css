@@ -6,14 +6,8 @@
   position: relative;
 }
 
-.Hero .Heading {
-  color: #fff;
-}
-
-.Hero .Paragraph {
-  font-size: 1.3rem;
+.Hero--SectionSubHeading {
   max-width: 26em;
-  color: #fff;
 }
 
 .Hero .Image {
@@ -29,7 +23,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 40em) {
   .Hero {
     padding: 7rem 0 4rem;

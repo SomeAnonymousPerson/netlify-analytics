@@ -11,9 +11,16 @@ h2 {
   font-weight: 500;
 }
 
-.inverted h2 {
+.inverse h1,
+.inverse h2 {
   color: #fff;
 }
+
+.SectionHeading {
+  text-align: center;
+  margin-bottom: 0;
+}
+
 
 @media (max-width: 40em) {
   h1 {

@@ -3,17 +3,8 @@
   padding: 6rem 0 8rem 0;
 }
 
-.OtherProducts--SectionHeading {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 0;
-}
-
 .OtherProducts--SectionSubHeading {
   text-align: center;
-  font-size: 1.3rem;
-  margin-top: 0.5em;
-  color: #fff;
 }
 
 .OtherProductsList {
@@ -33,6 +24,14 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 102%;
+}
+
+.OtherProductsListItem .Paragraph {
+  color: #000;
+}
+
+.OtherProductsListItem--netlify-dev .Paragraph {
+  color: #fff;
 }
 
 .OtherProductsListItem--netlify-edge {

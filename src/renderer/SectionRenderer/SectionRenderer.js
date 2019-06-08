@@ -17,11 +17,16 @@ const SectionsList = {
 };
 
 const SectionRenderer = props => {
-  const { component, content } = props;
+  const { component, content, style } = props;
   const Section = SectionsList[component];
 
+  let classNames = [];
+
+  if (component) classNames.push(component);
+  if (style) classNames.push(style);
+
   return (
-    <section className={component}>
+    <section className={classNames.join(' ')}>
       <Section content={content} />
     </section>
   );

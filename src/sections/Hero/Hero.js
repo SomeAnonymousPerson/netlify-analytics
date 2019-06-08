@@ -13,7 +13,12 @@ const Hero = props => {
   return (
     <Container>
       <Heading element={heading.options.element}>{heading.text}</Heading>
-      <Paragraph>{paragraph.text}</Paragraph>
+      <Paragraph
+        variant="SectionSubHeading"
+        className="Hero--SectionSubHeading"
+      >
+        {paragraph.text}
+      </Paragraph>
       <Image src={heroImage} alt="" />
     </Container>
   );
