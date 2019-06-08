@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <Container>
       <footer className="Footer">
-        <Image src={footerImage} />
+        <Image src={footerImage} alt="" />
       </footer>
     </Container>
   );

@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <header className="Header">
       <Container className="Header--Container">
-        <Image src={menuImage} className="Header--MenuDesktop" />
-        <Image src={menuMobile} className="Header--MenuMobile" />
-        <Image src={signupImage} className="Header--Signup" />
+        <Image src={menuImage} alt="" className="Header--MenuDesktop" />
+        <Image src={menuMobile} alt="" className="Header--MenuMobile" />
+        <Image src={signupImage} alt="" className="Header--Signup" />
       </Container>
     </header>
   );
