@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e471d9a2-7e27-4a50-841a-45b61da1265a/deploy-status)](https://app.netlify.com/sites/stupefied-williams-152b2a/deploys)
+
 # netlify-analytics
 
 ## Process
