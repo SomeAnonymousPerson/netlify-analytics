@@ -11,7 +11,7 @@ const NetlifyAnalytics = props => {
     return (
       <>
         <Helmet key="Helmet">
-          <title>NetlifyAnalytics</title>
+          <title>Netlify Analytics</title>
           <meta
             name="description"
             content="Discover Netlify Analytics with Real-time Audience tracking, Beautiful charts and KPIs."
@@ -27,7 +27,7 @@ const NetlifyAnalytics = props => {
     );
   });
 
-  return sections;
+  return <main className="netlify-analytics">{sections}</main>;
 };
 
 export default NetlifyAnalytics;

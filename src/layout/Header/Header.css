@@ -33,12 +33,21 @@
   width: 327px;
 }
 
-.Header--MenuMobile {
+.Header--LogoMobile {
   width: 157px;
   display: none;
 }
 
+.Header--MenuMobile {
+  width: 73px;
+  margin-top: 15px;
+  display: none;
+}
+
 @media (max-width: 60em) {
+  .Header--LogoMobile {
+    display: block;
+  }
   .Header--MenuMobile {
     display: block;
   }

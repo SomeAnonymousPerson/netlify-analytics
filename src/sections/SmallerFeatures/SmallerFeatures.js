@@ -35,6 +35,7 @@ const SmallerFeatures = props => {
     <Container>
       <Heading
         element={content.heading.options.element}
+        variant="SectionHeading"
         className="SmallerFeatures--SectionHeading"
       >
         {content.heading.text}
